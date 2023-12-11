@@ -38,9 +38,9 @@ const jwtMW = exjwt({
 });
 
 var db = mysql.createPool({
-  host: process.env.MYSQL_HOST_NAME,
-  user: process.env.MYSQL_USER,
-  password: process.env.MYSQL_PASSWORD,
+  host: "sql5.freemysqlhosting.net",
+  user: "sql5668586",
+  password: "M3fHvuahfu",
   database: "sql5668586",
   waitForConnections: true,
   connectionLimit: 10,
