@@ -1,4 +1,4 @@
-require('dotenv').config();
+//require('dotenv').config();
 
 const express = require("express");
 const compression = require("compression");
@@ -38,9 +38,9 @@ const jwtMW = exjwt({
 });
 
 var db = mysql.createPool({
-  host: MYSQL_HOST_NAME,
-  user: MYSQL_USER,
-  password: MYSQL_PASSWORD,
+  host: process.env.MYSQL_HOST_NAME,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
   database: "sql5668586",
   waitForConnections: true,
   connectionLimit: 10,
